@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap javascript link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <%- include('../views/layout/nav')%>
+    <main id="body-content">
+      <%- include('../views/layout/sidemedia')%>
+      <div class="container text-white w-75">
+        <!-- <p class="fs-2 fw-light m-0 mt-lg-5">About DBook</p> -->
+        <h1 class="display-2 fw-bold mb-5">
+          Scan QR Code <br />To Book
+          <span class="brand">Your Driving Test</span>
+        </h1>
+        <button
+          type="button"
+          class="btn border text-white px-4 rounded-4 me-3 mb-5"
+        >
+          Contact Us
+        </button>
+        <button
+          type="button"
+          class="btn icon-container text-white px-4 rounded-4 mb-5"
+        >
+          Our Services
+        </button>
+      </div>
+   
+  </body>
+</html>
+
+o Day 1 (Week 4): [Day when assignment was released]:
+▪ Create MongoDB account, use connection string and mongoose to connect to DB. Add
+User Model, may be with few fields only. [Mark 1]
+o Day 2: [Week 5]:
+▪ From G2_page, add data to Database. For this part, you may add FirstName, LastName,
+Age only. (You will establish proof of concept by adding small piece to data from UI into
+DB) [Mark 1]
+▪ Now when user clicks on Save button, it will save the data to Database. 

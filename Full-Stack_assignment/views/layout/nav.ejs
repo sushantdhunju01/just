@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <style>
+      body,
+      html {
+        background: #3a3e4b;
+        height: 100%;
+      }
+      #body-content {
+        margin-top: 80px;
+      }
+      .brand {
+        color: #ff9138;
+      }
+      .border-hover {
+        border-top: 5px solid transparent;
+        transform: translateY(-4px);
+      }
+
+      .border-hover:hover {
+        border-top: 5px solid #ff9138;
+        transform: translateY(-4px);
+      }
+
+      #sign-in {
+        background: #ff9138;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+
+      .navbar-toggler {
+        border: 3px solid #ff9138;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url(/static_files/svgs3/list.svg);
+      }
+
+      .navbar-toggler:focus {
+        box-shadow: none;
+      }
+
+      #nav-length {
+        width: 90%;
+      }
+
+      @media screen and (max-width: 992px) {
+        #nav-length {
+          width: 100%;
+        }
+
+        .border-hover {
+          border-top: 0;
+        }
+
+        .border-hover:hover {
+          border-top: 0;
+        }
+
+        #sign-in {
+          border-radius: 50px;
+        }
+      }
+      /* body section */
+      .icon-height {
+        height: 28px;
+        width: 28px;
+      }
+      .icon-container {
+        background: #ff9138;
+      }
+      .dark-background {
+        background: #2b3944;
+      }
+      #socialWrap {
+        border-radius: 0px 24px 24px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar navbar-expand-lg pt-4">
+        <div class="container-fluid">
+          <a
+            href="#"
+            class="brand text-decoration-none d-block d-lg-none fw-bold fs-1"
+            >DriveTest</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul
+              id="nav-length"
+              class="navbar-nav justify-content-between border-top border-2 text-center"
+            >
+              <li class="nav-item">
+                <a
+                  href="/dashboard"
+                  class="nav-link border-hover py-3 text-white"
+                  >DASHBOARD</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a href="/g" class="nav-link border-hover py-3 text-white"
+                  >G TEST</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/g2" class="nav-link border-hover py-3 text-white"
+                  >G2 TEST</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="/login"
+                  id="sign-in"
+                  class="nav-link my-2 px-4 text-white"
+                >
+                  <i class="me-3 fa fa-user" aria-hidden="true"></i>
+                  Sign In
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
